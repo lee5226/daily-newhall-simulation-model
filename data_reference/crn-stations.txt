@@ -1,0 +1,145 @@
+NCDCID   WBAN  NAME                           COUNTRY              ST COUNTY                         LAT       LON        ELEV   UTC   STNTYPE                                            GHCND       
+-------- ----- ------------------------------ -------------------- -- ------------------------------ --------- ---------- ------ ----- -------------------------------------------------- ----------- 
+30014605 64757 EGBERT 1 W                     CANADA               ON                                44.2326   -79.7810   807    -5    USCRN                                              CAW00064757 
+30121205 23583 ALEKNAGIK 1 NNE                UNITED STATES        AK DILLINGHAM                     59.2840   -158.6145  80     -9    USCRN                                              USW00023583 
+30113392 26656 BETHEL 87 WNW                  UNITED STATES        AK                                61.3465   -164.0769  153    -9    USCRN                                              USW00026656 
+30110253 96405 CORDOVA 14 ESE                 UNITED STATES        AK CHUGACH CENSUS AREA            60.4731   -145.3542  83     -9    USCRN                                              USW00096405 
+30094617 26565 DEADHORSE 3 S                  UNITED STATES        AK NORTH SLOPE BOROUGH            70.1618   -148.4644  30     -9    USCRN                                              USW00026565 
+30100989 96408 DENALI 27 N                    UNITED STATES        AK DENALI BOROUGH                 63.4520   -150.8747  2225   -9    USCRN                                              USW00096408 
+30014595 26494 FAIRBANKS 11 NE                UNITED STATES        AK FAIRBANKS NORTH STAR BOROUGH   64.9735   -147.5100  1140   -9    USCRN                                              USW00026494 
+30154044 26567 GALENA 44 SW                   UNITED STATES        AK YUKON-KOYUKUK                  64.3433   -158.0848  131    -9    USCRN                                                          
+30079549 56401 GLENNALLEN 64 N                UNITED STATES        AK COPPER RIVER CENSUS AREA       63.0295   -145.5003  2669   -9    USCRN                                              USW00056401 
+30076586 25380 GUSTAVUS 2 NE                  UNITED STATES        AK SKAGWAY-HOONAH-ANGOON          58.4292   -135.6900  20     -9    USCRN                                              USW00025380 
+30157257 26566 HUSLIA 27 E                    UNITED STATES        AK ALEUTIANS EAST BOROUGH         65.6582   -155.4761  207    -9    USCRN                                                          
+30094615 26564 IVOTUK 1 NNE                   UNITED STATES        AK NORTH SLOPE BOROUGH            68.4851   -155.7506  1909   -9    USCRN                                              USW00026564 
+30015617 26563 KENAI 29 ENE                   UNITED STATES        AK KENAI PENINSULA BOROUGH        60.7237   -150.4484  282    -9    USCRN                                              USW00026563 
+30076585 25522 KING SALMON 42 SE              UNITED STATES        AK BRISTOL BAY BOROUGH            58.2077   -155.9225  661    -9    USCRN                                              USW00025522 
+30076587 25381 METLAKATLA 6 S                 UNITED STATES        AK PRINCE OF WALES-OUTER KETCHIKA 55.0455   -131.5877  105    -9    USCRN                                              USW00025381 
+30015466 26562 PORT ALSWORTH 1 SW             UNITED STATES        AK LAKE AND PENINSULA BOROUGH     60.1951   -154.3196  321    -9    USCRN                                              USW00026562 
+30015616 26655 RED DOG MINE 3 SSW             UNITED STATES        AK NORTHWEST ARCTIC BOROUGH       68.0277   -162.9212  942    -9    USCRN                                              USW00026655 
+30094616 96406 RUBY 44 ESE                    UNITED STATES        AK YUKON-KOYUKUK                  64.5015   -154.1297  259    -9    USCRN                                              USW00096406 
+30015465 25630 SAND POINT 1 ENE               UNITED STATES        AK ALEUTIANS EAST BOROUGH         55.3473   -160.4660  240    -9    USCRN                                              USW00025630 
+30100987 96407 SELAWIK 28 E                   UNITED STATES        AK NORTHWEST ARCTIC BOROUGH       66.5620   -159.0036  22     -9    USCRN                                              USW00096407 
+30014644 25379 SITKA 1 NE                     UNITED STATES        AK SITKA BOROUGH                  57.0574   -135.3266  78     -9    USCRN                                              USW00025379 
+30014682 25711 ST. PAUL 4 NE                  UNITED STATES        AK ALEUTIANS WEST                 57.1575   -170.2119  20     -9    USCRN                                              USW00025711 
+30015723 96404 TOK 70 SE                      UNITED STATES        AK SOUTHEAST FAIRBANKS            62.7370   -141.2083  2000   -9    USCRN                                              USW00096404 
+30110254 96409 TOOLIK LAKE 5 ENE              UNITED STATES        AK NORTH SLOPE BOROUGH            68.6483   -149.3986  2461   -9    USCRN                                              USW00096409 
+30014577 27516 UTQIAĠVIK FORMERLY BARROW 4 E  UNITED STATES        AK NORTH SLOPE BOROUGH            71.3213   -156.6110  15     -9    USCRN                                              USW00027516 
+30106788 25382 YAKUTAT 3 SSE                  UNITED STATES        AK YAKUTAT BOROUGH                59.5087   -139.6850  26     -9    USCRN                                              USW00025382 
+30014678 63869 FAIRHOPE 3 NE                  UNITED STATES        AL BALDWIN                        30.5485   -87.8757   95     -6    USCRN                                              USW00063869 
+30014716 63857 GADSDEN 19 N                   UNITED STATES        AL DEKALB                         34.2851   -85.9621   1152   -6    USCRN                                              USW00063857 
+30014608 63858 SELMA 13 WNW                   UNITED STATES        AL DALLAS                         32.4567   -87.2422   193    -6    USCRN                                              USW00063858 
+30014561 23904 BATESVILLE 8 WNW               UNITED STATES        AR INDEPENDENCE                   35.8201   -91.7812   455    -6    USCRN                                              USW00023904 
+30014517 53132 ELGIN 5 S                      UNITED STATES        AZ SANTA CRUZ                     31.5907   -110.5087  4811   -7    USCRN                                              USW00053132 
+30014656 53131 TUCSON 11 W                    UNITED STATES        AZ PIMA                           32.2395   -111.1696  2733   -7    USCRN                                              USW00053131 
+30014628 53155 WILLIAMS 35 NNW                UNITED STATES        AZ COCONINO                       35.7552   -112.3374  5990   -7    USCRN                                              USW00053155 
+30014543 53154 YUMA 27 ENE                    UNITED STATES        AZ YUMA                           32.8350   -114.1884  620    -7    USCRN                                              USW00053154 
+30014624 93245 BODEGA 6 WSW                   UNITED STATES        CA SONOMA                         38.3208   -123.0747  63     -8    USCRN                                              USW00093245 
+30014541 53151 FALLBROOK 5 NE                 UNITED STATES        CA SAN DIEGO                      33.4392   -117.1904  1140   -8    USCRN                                              USW00053151 
+30014668 93243 MERCED 23 WSW                  UNITED STATES        CA MERCED                         37.2381   -120.8825  78     -8    USCRN                                              USW00093243 
+30014694 04222 REDDING 12 WNW                 UNITED STATES        CA SHASTA                         40.6507   -122.6068  1418   -8    USCRN                                              USW00004222 
+30014622 53152 SANTA BARBARA 11 W             UNITED STATES        CA SANTA BARBARA                  34.4141   -119.8796  18     -8    USCRN                                              USW00053152 
+30014529 53139 STOVEPIPE WELLS 1 SW           UNITED STATES        CA INYO                           36.6020   -117.1449  84     -8    USCRN                                              USW00053139 
+30014690 53150 YOSEMITE VILLAGE 12 W          UNITED STATES        CA MARIPOSA                       37.7592   -119.8208  6620   -8    USCRN                                              USW00053150 
+30014599 94075 BOULDER 14 W                   UNITED STATES        CO BOULDER                        40.0354   -105.5409  9828   -7    USCRN                                              USW00094075 
+30014726 03061 CORTEZ 8 SE                    UNITED STATES        CO MONTEZUMA                      37.2553   -108.5035  8034   -7    USCRN                                              USW00003061 
+30014670 94082 DINOSAUR 2 E                   UNITED STATES        CO MOFFAT                         40.2446   -108.9677  6062   -7    USCRN                                              USW00094082 
+30014555 03063 LA JUNTA 17 WSW                UNITED STATES        CO OTERO                          37.8639   -103.8224  4386   -7    USCRN                                              USW00003063 
+30014714 03060 MONTROSE 11 ENE                UNITED STATES        CO MONTROSE                       38.5440   -107.6928  8402   -7    USCRN                                              USW00003060 
+30014658 94074 NUNN 7 NNE                     UNITED STATES        CO WELD                           40.8066   -104.7552  5390   -7    USCRN                                              USW00094074 
+30014718 92826 EVERGLADES CITY 5 NE           UNITED STATES        FL COLLIER                        25.8996   -81.3183   4      -5    USCRN                                              USW00092826 
+30014573 92827 SEBRING 23 SSE                 UNITED STATES        FL HIGHLANDS                      27.1526   -81.3689   150    -5    USCRN                                              USW00092827 
+30014680 92821 TITUSVILLE 7 E                 UNITED STATES        FL BREVARD                        28.6159   -80.6929   3      -5    USCRN                                              USW00092821 
+30014533 63856 BRUNSWICK 23 S                 UNITED STATES        GA CAMDEN                         30.8078   -81.4596   25     -5    USCRN                                              USW00063856 
+30014706 63829 NEWTON 11 SW                   UNITED STATES        GA BAKER                          31.1923   -84.4465   156    -5    USCRN                                              USW00063829 
+30014662 63828 NEWTON 8 W                     UNITED STATES        GA BAKER                          31.3127   -84.4706   176    -5    USCRN                                              USW00063828 
+30014557 63850 WATKINSVILLE 5 SSE             UNITED STATES        GA OCONEE                         33.7837   -83.3896   741    -5    USCRN                                              USW00063850 
+30014610 21515 HILO 5 S                       UNITED STATES        HI HAWAII                         19.6450   -155.0827  622    -10   USCRN                                              USW00021515 
+30014724 21514 MAUNA LOA 5 NNE                UNITED STATES        HI HAWAII                         19.5354   -155.5760  11179  -10   USCRN                                              USW00021514 
+30014640 54902 DES MOINES 17 E                UNITED STATES        IA JASPER                         41.5562   -93.2855   921    -6    USCRN                                              USW00054902 
+30014660 04126 ARCO 17 SW                     UNITED STATES        ID BUTTE                          43.4621   -113.5560  5920   -7    USCRN                                              USW00004126 
+30014632 04127 MURPHY 10 W                    UNITED STATES        ID OWYHEE                         43.2044   -116.7505  3950   -7    USCRN                                              USW00004127 
+30014523 54808 CHAMPAIGN 9 SW                 UNITED STATES        IL CHAMPAIGN                      40.0528   -88.3729   700    -6    USCRN                                              USW00054808 
+30014666 54811 SHABBONA 5 NNE                 UNITED STATES        IL DEKALB                         41.8430   -88.8513   861    -6    USCRN                                              USW00054811 
+30014620 63898 BEDFORD 5 WNW                  UNITED STATES        IN LAWRENCE                       38.8882   -86.5707   760    -5    USCRN                                              USW00063898 
+30014553 53974 MANHATTAN 6 SSW                UNITED STATES        KS RILEY                          39.1027   -96.6098   1137   -6    USCRN                                              USW00053974 
+30014567 03067 OAKLEY 19 SSW                  UNITED STATES        KS LOGAN                          38.8701   -100.9627  2870   -6    USCRN                                              USW00003067 
+30014551 63849 BOWLING GREEN 21 NNE           UNITED STATES        KY EDMONSON                       37.2504   -86.2325   790    -6    USCRN                                              USW00063849 
+30014702 63838 VERSAILLES 3 NNW               UNITED STATES        KY WOODFORD                       38.0945   -84.7465   891    -5    USCRN                                              USW00063838 
+30014579 53960 LAFAYETTE 13 SE                UNITED STATES        LA ST. MARTIN                     30.0918   -91.8731   35     -6    USCRN                                              USW00053960 
+30014549 53961 MONROE 26 N                    UNITED STATES        LA UNION                          32.8833   -92.1165   88     -6    USCRN                                              USW00053961 
+30014521 94645 LIMESTONE 4 NNW                UNITED STATES        ME AROOSTOOK                      46.9601   -67.8833   737    -5    USCRN                                              USW00094645 
+30014634 94644 OLD TOWN 2 W                   UNITED STATES        ME PENOBSCOT                      44.9281   -68.7006   127    -5    USCRN                                              USW00094644 
+30014672 54810 CHATHAM 1 SE                   UNITED STATES        MI ALGER                          46.3345   -86.9200   875    -5    USCRN                                              USW00054810 
+30014571 54854 GAYLORD 9 SSW                  UNITED STATES        MI OTSEGO                         44.9080   -84.7203   1461   -5    USCRN                                              USW00054854 
+30014525 04994 GOODRIDGE 12 NNW               UNITED STATES        MN MARSHALL                       48.3055   -95.8744   1150   -6    USCRN                                              USW00004994 
+30014732 54932 SANDSTONE 6 W                  UNITED STATES        MN PINE                           46.1135   -92.9936   1130   -6    USCRN                                              USW00054932 
+30014565 13301 CHILLICOTHE 22 ENE             UNITED STATES        MO LINN                           39.8668   -93.1470   833    -6    USCRN                                              USW00013301 
+30014511 23908 JOPLIN 24 N                    UNITED STATES        MO BARTON                         37.4277   -94.5829   952    -6    USCRN                                              USW00023908 
+30014648 23909 SALEM 10 W                     UNITED STATES        MO DENT                           37.6344   -91.7226   1198   -6    USCRN                                              USW00023909 
+30014913 23803 HOLLY SPRINGS 4 N              UNITED STATES        MS MARSHALL                       34.8223   -89.4348   484    -6    USCRN                                              USW00023803 
+30014664 63831 NEWTON 5 ENE                   UNITED STATES        MS NEWTON                         32.3378   -89.0703   374    -6    USCRN                                              USW00063831 
+30014539 04137 DILLON 18 WSW                  UNITED STATES        MT BEAVERHEAD                     45.1580   -113.0057  5971   -7    USCRN                                              USW00004137 
+30014652 04140 LEWISTOWN 42 WSW               UNITED STATES        MT JUDITH BASIN                   46.8847   -110.2895  5070   -7    USCRN                                              USW00004140 
+30014527 04130 ST. MARY 1 SSW                 UNITED STATES        MT GLACIER                        48.7412   -113.4330  4555   -7    USCRN                                              USW00004130 
+30014513 94060 WOLF POINT 29 ENE              UNITED STATES        MT ROOSEVELT                      48.3082   -105.1018  2085   -7    USCRN                                              USW00094060 
+30014547 94059 WOLF POINT 34 NE               UNITED STATES        MT ROOSEVELT                      48.4887   -105.2096  2643   -7    USCRN                                              USW00094059 
+30014501 53878 ASHEVILLE 13 S                 UNITED STATES        NC HENDERSON                      35.4185   -82.5567   2103   -5    USCRN                                              USW00053878 
+30014700 53877 ASHEVILLE 8 SSW                UNITED STATES        NC BUNCOMBE                       35.4945   -82.6142   2151   -5    USCRN                                              USW00053877 
+30014509 03758 DURHAM 11 W                    UNITED STATES        NC ORANGE                         35.9705   -79.0931   562    -5    USCRN                                              USW00003758 
+30014738 54937 JAMESTOWN 38 WSW               UNITED STATES        ND KIDDER                         46.7702   -99.4778   1920   -6    USCRN                                              USW00054937 
+30014593 94080 MEDORA 7 E                     UNITED STATES        ND BILLINGS                       46.8946   -103.3769  2771   -7    USCRN                                              USW00094080 
+30014612 94084 NORTHGATE 5 ESE                UNITED STATES        ND BURKE                          48.9676   -102.1702  1842   -6    USCRN                                              USW00094084 
+30014698 94077 HARRISON 20 SSE                UNITED STATES        NE SIOUX                          42.4247   -103.7363  4406   -7    USCRN                                              USW00094077 
+30014575 94996 LINCOLN 11 SW                  UNITED STATES        NE LANCASTER                      40.6954   -96.8541   1372   -6    USCRN                                              USW00094996 
+30014515 94995 LINCOLN 8 ENE                  UNITED STATES        NE LANCASTER                      40.8484   -96.5651   1189   -6    USCRN                                              USW00094995 
+30014674 94079 WHITMAN 5 ENE                  UNITED STATES        NE GRANT                          42.0680   -101.4450  3740   -7    USCRN                                              USW00094079 
+30014710 54794 DURHAM 2 N                     UNITED STATES        NH STRAFFORD                      43.1716   -70.9277   119    -5    USCRN                                              USW00054794 
+30014708 54795 DURHAM 2 SSW                   UNITED STATES        NH STRAFFORD                      43.1092   -70.9484   63     -5    USCRN                                              USW00054795 
+30014646 03074 LAS CRUCES 20 N                UNITED STATES        NM DONA ANA                       32.6137   -106.7414  4327   -7    USCRN                                              USW00003074 
+30014563 03062 LOS ALAMOS 13 W                UNITED STATES        NM SANDOVAL                       35.8584   -106.5214  8716   -7    USCRN                                              USW00003062 
+30014583 03048 SOCORRO 20 N                   UNITED STATES        NM SOCORRO                        34.3557   -106.8859  4847   -7    USCRN                                              USW00003048 
+30014587 53138 BAKER 5 W                      UNITED STATES        NV WHITE PINE                     39.0118   -114.2090  6617   -8    USCRN                                              USW00053138 
+30014626 04139 DENIO 52 WSW                   UNITED STATES        NV WASHOE                         41.8484   -119.6357  6500   -8    USCRN                                              USW00004139 
+30014601 53136 MERCURY 3 SSW                  UNITED STATES        NV NYE                            36.6240   -116.0225  3284   -8    USCRN                                              USW00053136 
+30014531 64758 ITHACA 13 E                    UNITED STATES        NY CORTLAND                       42.4401   -76.2462   1228   -5    USCRN                                              USW00064758 
+30014642 64756 MILLBROOK 3 W                  UNITED STATES        NY DUTCHESS                       41.7857   -73.7422   413    -5    USCRN                                              USW00064756 
+30106812 54856 WOOSTER 3 SSE                  UNITED STATES        OH WAYNE                          40.7641   -81.9104   1102   -5    USCRN                                              USW00054856 
+30014638 03055 GOODWELL 2 E                   UNITED STATES        OK TEXAS                          36.5993   -101.5950  3266   -6    USCRN                                              USW00003055 
+30015687 53182 GOODWELL 2 SE                  UNITED STATES        OK TEXAS                          36.5682   -101.6097  3282   -6    USCRN                                              USW00053182 
+30014654 53926 STILLWATER 2 W                 UNITED STATES        OK PAYNE                          36.1181   -97.0914   890    -6    USCRN                                              USW00053926 
+30014630 53927 STILLWATER 5 WNW               UNITED STATES        OK PAYNE                          36.1346   -97.1082   888    -6    USCRN                                              USW00053927 
+30014545 04141 COOS BAY 8 SW                  UNITED STATES        OR COOS                           43.2718   -124.3186  12     -8    USCRN                                              USW00004141 
+30014684 04236 CORVALLIS 10 SSW               UNITED STATES        OR BENTON                         44.4185   -123.3257  312    -8    USCRN                                              USW00004236 
+30014507 04125 JOHN DAY 35 WNW                UNITED STATES        OR GRANT                          44.5560   -119.6459  2245   -8    USCRN                                              USW00004125 
+30014696 04128 RILEY 10 WSW                   UNITED STATES        OR HARNEY                         43.4711   -119.6917  4583   -8    USCRN                                              USW00004128 
+30014676 03761 AVONDALE 2 N                   UNITED STATES        PA CHESTER                        39.8593   -75.7861   400    -5    USCRN                                              USW00003761 
+30014503 54796 KINGSTON 1 NW                  UNITED STATES        RI WASHINGTON                     41.4911   -71.5413   115    -5    USCRN                                              USW00054796 
+30014585 54797 KINGSTON 1 W                   UNITED STATES        RI WASHINGTON                     41.4782   -71.5417   106    -5    USCRN                                              USW00054797 
+30014519 63826 BLACKVILLE 3 W                 UNITED STATES        SC BARNWELL                       33.3550   -81.3279   317    -5    USCRN                                              USW00063826 
+30014704 03728 MCCLELLANVILLE 7 NE            UNITED STATES        SC CHARLESTON                     33.1532   -79.3637   9      -5    USCRN                                              USW00003728 
+30014730 54933 ABERDEEN 35 WNW                UNITED STATES        SD MCPHERSON                      45.7115   -99.1296   1957   -6    USCRN                                              USW00054933 
+30014535 94081 BUFFALO 13 ESE                 UNITED STATES        SD HARDING                        45.5160   -103.3017  2883   -7    USCRN                                              USW00094081 
+30014614 94085 PIERRE 24 S                    UNITED STATES        SD LYMAN                          44.0194   -100.3530  2124   -6    USCRN                                              USW00094085 
+30014692 04990 SIOUX FALLS 14 NNE             UNITED STATES        SD MINNEHAHA                      43.7346   -96.6222   1594   -6    USCRN                                              USW00004990 
+30014591 63855 CROSSVILLE 7 NW                UNITED STATES        TN CUMBERLAND                     36.0138   -85.1345   1913   -6    USCRN                                              USW00063855 
+30014616 23907 AUSTIN 33 NW                   UNITED STATES        TX BURNET                         30.6222   -98.0846   1361   -6    USCRN                                              USW00023907 
+30014720 03072 BRONTE 11 NNE                  UNITED STATES        TX COKE                           32.0408   -100.2495  1997   -6    USCRN                                              USW00003072 
+30014603 12987 EDINBURG 17 NNE                UNITED STATES        TX HIDALGO                        26.5258   -98.0633   64     -6    USCRN                                              USW00012987 
+30014497 03047 MONAHANS 6 ENE                 UNITED STATES        TX WARD                           31.6219   -102.8071  2724   -6    USCRN                                              USW00003047 
+30014636 03054 MULESHOE 19 S                  UNITED STATES        TX BAILEY                         33.9557   -102.7740  3742   -6    USCRN                                              USW00003054 
+30014597 53968 PALESTINE 6 WNW                UNITED STATES        TX ANDERSON                       31.7796   -95.7232   383    -6    USCRN                                              USW00053968 
+30014537 22016 PANTHER JUNCTION 2 N           UNITED STATES        TX BREWSTER                       29.3483   -103.2093  3494   -6    USCRN                                              USW00022016 
+30014569 23906 PORT ARANSAS 32 NNE            UNITED STATES        TX ARANSAS                        28.3045   -96.8230   15     -6    USCRN                                              USW00023906 
+30014650 04138 BRIGHAM CITY 28 WNW            UNITED STATES        UT BOX ELDER                      41.6163   -112.5437  4951   -7    USCRN                                              USW00004138 
+30014734 53149 TORREY 7 E                     UNITED STATES        UT WAYNE                          38.3028   -111.2935  6204   -7    USCRN                                              USW00053149 
+30014712 03739 CAPE CHARLES 5 ENE             UNITED STATES        VA NORTHAMPTON                    37.2907   -75.9270   29     -5    USCRN                                              USW00003739 
+30014686 03759 CHARLOTTESVILLE 2 SSE          UNITED STATES        VA ALBEMARLE                      37.9975   -78.4656   1177   -5    USCRN                                              USW00003759 
+30014581 04223 DARRINGTON 21 NNE              UNITED STATES        WA SKAGIT                         48.5405   -121.4460  407    -8    USCRN                                              USW00004223 
+30014728 04237 QUINAULT 4 NE                  UNITED STATES        WA GRAYS HARBOR                   47.5139   -123.8120  286    -8    USCRN                                              USW00004237 
+30014618 04136 SPOKANE 17 SSW                 UNITED STATES        WA SPOKANE                        47.4174   -117.5264  2267   -8    USCRN                                              USW00004136 
+30014505 54903 NECEDAH 5 WNW                  UNITED STATES        WI JUNEAU                         44.0604   -90.1737   933    -6    USCRN                                              USW00054903 
+30014499 03733 ELKINS 21 ENE                  UNITED STATES        WV TUCKER                         39.0130   -79.4743   3390   -5    USCRN                                              USW00003733 
+30014722 94078 LANDER 11 SSE                  UNITED STATES        WY FREMONT                        42.6754   -108.6686  5773   -7    USCRN                                              USW00094078 
+30014589 04131 MOOSE 1 NNE                    UNITED STATES        WY TETON                          43.6615   -110.7120  6466   -7    USCRN                                              USW00004131 
+30014688 94088 SUNDANCE 8 NNW                 UNITED STATES        WY CROOK                          44.5169   -104.4363  5792   -7    USCRN                                              USW00094088 

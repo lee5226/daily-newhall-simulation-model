@@ -1,0 +1,2 @@
+station,station_id,year,mukey,surface_theta_sat,surface_theta_fc,surface_theta_wp,surface_rho_b,rootzone_theta_sat,rootzone_theta_fc,rootzone_theta_wp,rootzone_rho_b
+TX_Edinburg_17_NNE,12987,2012,367662,0.387169811,0.200000003,0.079999998,1.51,0.389037736,0.217100004,0.1142,1.5045
