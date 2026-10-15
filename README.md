@@ -1,217 +1,101 @@
 # Daily Newhall Simulation Model (D-NSM)
 
-This repository contains the code used to develop, run, and evaluate the Daily Newhall Simulation Model (D-NSM), a daily extension of the original Newhall Simulation Model (NSM) for estimating surface and rootzone soil moisture from precipitation, temperature, and soil properties.
+Python code for *A Daily Newhall Simulation Model for Surface and Rootzone Soil Moisture Estimation* (Lee, Merwade, and Levi).
 
-The GitHub repository includes the model code, preprocessing scripts, evaluation scripts, figure-generation scripts, and a minimal example dataset for repository verification. The full processed dataset used for manuscript-scale analysis will be archived separately in Zenodo and linked here once available.
+D-NSM estimates daily surface (0–12.5 cm) and rootzone (0–100 cm) soil moisture from precipitation, temperature, and soil properties using a simple water balance with two storage domains.
 
-## Repository contents
+## Code
 
-```text
-daily-newhall-model/
-├─ README.md
-├─ LICENSE
-├─ requirements.txt
-├─ data_reference/
-│  ├─ constants_classic.csv
-│  ├─ knorth_classic.csv
-│  ├─ ksouth_classic.csv
-│  ├─ crn-stations.txt
-│  └─ stations_XY.csv
-├─ src/
-│  ├─ dataset_preprocessing/
-│  ├─ nsm/
-│  ├─ dnsm/
-│  ├─ pet_screening/
-│  ├─ evaluation/
-│  ├─ figures/
-│  └─ utils/
-└─ outputs/
+### `src/dataset_preprocessing/`
+
+| Script | Description |
+| --- | --- |
+| `02_qc_uscrn_v2_pt_qc_final.py` | Screen USCRN soil moisture and climate records. |
+| `02b_select_station_year_pt_qc.py` | Select one evaluation year per station. |
+| `03_extract_gssurgo.py` | Match stations to gSSURGO map units. |
+| `04_build_soil_params_by_station_final_qc_w33_dbthirdbar_ptqc.py` | Prepare soil parameters for the main model. |
+| `04b_build_theta_sat_final_qc_w33_dbthirdbar_ptqc.py` | Estimate saturated water content for the main model. |
+| `05_extract_climate_ptqc.py` | Prepare daily climate and warm-up inputs. |
+| `06_station_coordinates_final_qc_w33_dbthirdbar_ptqc.py` | Prepare station coordinates. |
+| `04_build_soil_params_by_station_final_qc_fc10_33_dbthirdbar_ptqc.py` | Prepare soil inputs for the field-capacity sensitivity test. |
+| `04b_build_theta_sat_final_qc_fc10_33_dbthirdbar_ptqc.py` | Estimate saturated water content for that test. |
+
+### `src/dnsm/`
+
+| Script | Description |
+| --- | --- |
+| `climate.py` | Process climate forcing. |
+| `pet.py` | Calculate daily potential evapotranspiration. |
+| `soil_profile.py` | Define soil layers and water storage. |
+| `moisture_condition.py` | Handle slot-based moisture updates. |
+| `run_dnsm_final_qc_w33_dbthirdbar_ptqc.py` | Run the main D-NSM model. |
+| `run_dnsm_final_qc_w33_dbthirdbar_ptqc_single.py` | Run the single-storage comparison. |
+| `run_alpha_fast_sensitivity_final_qc_w33_dbthirdbar_ptqc.py` | Test fast-drainage coefficients. |
+| `run_dnsm_final_qc_fc10_33_dbthirdbar_ptqc.py` | Run the field-capacity sensitivity test. |
+
+### `src/nsm/`
+
+| Script | Description |
+| --- | --- |
+| `build_monthly_inputs_dbthirdbar_ptqc.py` | Prepare monthly climate inputs for the original NSM. |
+| `run_nsm_dbthirdbar_ptqc.py` | Run the original monthly NSM. |
+
+### `src/evaluation/`
+
+| Script | Description |
+| --- | --- |
+| `compare_faw_daily_vs_monthly_final_thirdbar_ptqc.py` | Compare fractional available water from the NSM and D-NSM. |
+| `compute_vwc_performance_metrics_final_qc_w33_dbthirdbar_ptqc.py` | Calculate main VWC performance metrics. |
+| `compute_alpha_fast_sensitivity_metrics_final_qc_w33_dbthirdbar_ptqc.py` | Evaluate fast-drainage sensitivity results. |
+| `compute_vwc_performance_metrics_final_qc_fc10_33_dbthirdbar_ptqc.py` | Evaluate field-capacity sensitivity results. |
+
+### `src/figures/`
+
+| Script | Description |
+| --- | --- |
+| `fig5_timeseries_faw_ptqc.py` | Plot FAW time series. (Figure 4) |
+| `fig6_boxplot_vwc_ptqc.py` | Plot VWC performance metrics. (Figure 5) |
+| `fig7_timeseries_vwc_ptqc.py` | Plot daily VWC time series. (Figure 6) |
+| `fig8_timeseries_with_without_s2_ptqc_batesville.py` | Compare simulations with and without fast-drainage storage. (Figure 7) |
+
+Figure numbers in script names may differ from those in the manuscript.
+
+### Other files
+
+- `src/utils/paths.py`: Data paths.
+- `src/utils/utils_obs_bulk.py`: Depth-weighted USCRN soil moisture observations.
+- `data_reference/`: Station metadata (`crn-stations.txt`, `stations_XY.csv`) and original NSM parameter tables (`constants_classic.csv`, `knorth_classic.csv`, `ksouth_classic.csv`).
+- `requirements.txt`: Python dependencies.
+
+## Data and setup
+
+Processed inputs and model outputs are stored separately on Zenodo (updated DOI to be added). Download the dataset and place its `outputs/` folder in the repository root, keeping the original subfolders and filenames. The main model reads processed inputs from `outputs/1016/`.
+
+Raw data sources:
+- [USCRN Daily01](https://www.ncei.noaa.gov/pub/data/uscrn/products/daily01/)
+- [USDA-NRCS gSSURGO](https://www.nrcs.usda.gov/resources/data-and-reports/gridded-soil-survey-geographic-gssurgo-database)
+
+Raw USCRN files are expected in `uscrn_daily01/`. For gSSURGO preprocessing, put the database in `external_data/gSSURGO_CONUS.gdb` or change `GSSURGO_GDB` in `src/utils/paths.py` to your local `.gdb` path. The main D-NSM run uses processed soil parameter files and does not require the original `.gdb`.
+
+Install dependencies from the repository root:
+
+```bash
+python -m pip install -r requirements.txt
 ```
 
-## Minimal example data included in GitHub
+Run the main model and its evaluation:
 
-This GitHub repository contains only a minimal example dataset for repository verification.
-
-In the current version, the minimal example data are limited to station `12987`. These files are intended to help users confirm that the repository structure, paths, and main scripts run correctly. They are not the full dataset used for manuscript-scale analysis.
-
-## Required external datasets
-
-Full reproduction of the workflow requires several external datasets that users must obtain separately.
-
-USCRN daily observations are available at https://www.ncei.noaa.gov/pub/data/uscrn/products/daily01/, gSSURGO soil data are available at https://www.nrcs.usda.gov/resources/data-and-reports/gridded-soil-survey-geographic-gssurgo-database, and MODIS/Terra Net Evapotranspiration Gap-Filled 8-Day L4 Global 500 m data (MOD16A2GF, Version 061) are available at https://doi.org/10.5067/MODIS/MOD16A2GF.061.
-
-### USCRN daily observations
-
-Place the station files in:
-
-```text
-uscrn_daily01/
+```bash
+python src/dnsm/run_dnsm_final_qc_w33_dbthirdbar_ptqc.py
+python src/evaluation/compute_vwc_performance_metrics_final_qc_w33_dbthirdbar_ptqc.py
 ```
 
-### gSSURGO database for the conterminous United States
+Other simulations and evaluations are provided in `src/dnsm/`, `src/nsm/`, and `src/evaluation/`.
 
-Place the geodatabase at:
-
-```text
-gSSURGO_CONUS.gdb
-```
-
-### MODIS PET data for PET screening
-
-Place the input file at:
-
-```text
-outputs/1016/pet_screening/MODIS_dailyPET.csv
-```
-
-## Note on `YEAR = 1016`
-
-Several scripts use `YEAR = 1016` as a shorthand label for the 2010–2016 evaluation pool used during station-year screening. It does not represent a calendar year.
-
-## Software requirements
-
-The main Python dependencies used in this repository are listed in `requirements.txt`.
-
-## Main workflow
-
-### 1. Dataset preprocessing
-
-Scripts in `src/dataset_preprocessing/` prepare station-level soil, climate, and metadata inputs used by the NSM and D-NSM workflows.
-
-Main scripts include:
-
-`02_qc_uscrn.py`  
-Quality control of USCRN station records.
-
-`02b_select_station_year.py`  
-Selection of screened station-year combinations.
-
-`03_extract_gssurgo.py`  
-Extraction of soil information from gSSURGO.
-
-`04_build_soil_params_by_station.py`  
-Construction of station-level soil hydraulic parameters.
-
-`04b_build_theta_sat.py`  
-Estimation of saturation-related soil parameters.
-
-`05_extract_climate.py`  
-Preparation of climate input files.
-
-`06_station_coordinates.py`  
-Preparation of station coordinate metadata.
-
-### 2. Monthly NSM workflow
-
-Scripts:
-
-`src/nsm/build_monthly_inputs.py`  
-`src/nsm/run_nsm.py`
-
-Purpose:  
-Prepare monthly inputs and run the original monthly NSM for comparison against the daily model.
-
-Main inputs:  
-processed station metadata in `outputs/`  
-monthly climate inputs  
-NSM reference constants in `data_reference/`
-
-Main outputs:  
-monthly NSM results written under `outputs/`
-
-### 3. Daily D-NSM workflow
-
-Script:
-
-`src/dnsm/run_dnsm.py`
-
-Purpose:  
-Run the Daily Newhall Simulation Model and generate daily surface and rootzone soil moisture outputs.
-
-Main inputs:  
-processed climate inputs in `outputs/1016/daily_climate/`  
-one-year warm-up climate inputs in `outputs/1016/daily_climate_spinup/`  
-station coordinates in `outputs/1016/coordinates_final_1016.csv`  
-layer-based soil parameters in `outputs/1016/layers_by_station_1016.csv`  
-optional saturation parameter file in `outputs/1016/layers_by_station_1016_satPTF_only.csv`
-
-Main outputs:  
-daily D-NSM results written under `outputs/1016/daily_newhall/`
-
-### 4. Evaluation against USCRN observations
-
-#### 4.1 VWC-based evaluation
-
-Script:
-
-`src/evaluation/compute_vwc_performance_metrics.py`
-
-Purpose:  
-Compare D-NSM volumetric water content outputs against bulk soil moisture observations derived from USCRN.
-
-Main inputs:  
-D-NSM daily outputs in `outputs/1016/daily_newhall/`  
-observed station files in `outputs/1016/per_station_sm/`  
-station metadata in `outputs/1016/aws_by_station_final_1016.csv`
-
-Main outputs:  
-summary and station-level VWC performance metrics in `outputs/1016/metrics/vwc/`
-
-#### 4.2 FAW comparison between daily D-NSM and monthly NSM
-
-Script:
-
-`src/evaluation/compare_faw_daily_vs_monthly.py`
-
-Purpose:  
-Compare end-of-month fraction of available water from the daily D-NSM and the monthly NSM.
-
-Main inputs:  
-monthly NSM outputs  
-daily D-NSM outputs  
-observation-based FAW inputs
-
-Main outputs:  
-comparison tables and files written under `outputs/`
-
-### 5. Figure generation
-
-Scripts in `src/figures/` reproduce manuscript figures.
-
-Examples include:
-
-`fig4_boxplot_faw.py`  
-`fig5_timeseries_faw.py`  
-`fig6_boxplot_vwc.py`  
-`fig7_timeseries_vwc.py`  
-`fig8_timeseries_with_without_s2.py`
-
-## Supporting analysis: PET screening against MODIS
-
-This workflow is included as supporting analysis and is separate from the main D-NSM evaluation workflow.
-
-Scripts:
-
-`src/evaluation/build_pet_8day_from_dnsm.py`  
-`src/pet_screening/modis_filtering.py`  
-`src/pet_screening/compare_pet_vs_modis.py`
-
-Purpose:  
-Generate 8-day PET totals from D-NSM outputs and compare them with MODIS PET.
-
-Main inputs:  
-D-NSM daily outputs in `outputs/1016/daily_newhall/`  
-MODIS PET input file in `outputs/1016/pet_screening/MODIS_dailyPET.csv`
-
-Main outputs:  
-8-day PET files under `outputs/1016/daily_PET/`  
-filtered MODIS PET files under `outputs/1016/pet_screening/`  
-PET comparison metrics under `outputs/1016/pet_screening/`
+**Preprocessing note:** `03_extract_gssurgo.py` currently expects `outputs/selected_station_year.csv`. If using the output of `02b_select_station_year_pt_qc.py`, change that filename to `selected_station_year_1016_pt_qc.csv` in `03_extract_gssurgo.py`.
 
 ## Citation
 
-If you use this repository, please cite the associated manuscript and the archived software release once the Zenodo DOI is available.
+Lee, M., Merwade, V., and Levi, M. R. *A Daily Newhall Simulation Model for Surface and Rootzone Soil Moisture Estimation.* (Publication details pending.)
 
-## License
-
-This repository is distributed under the BSD 3-Clause License.
+Software and dataset Zenodo version DOIs will be added after the updated releases.

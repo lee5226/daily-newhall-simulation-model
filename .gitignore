@@ -1,0 +1,15 @@
+# Results, original observation downloads, and external gSSURGO geodatabases
+outputs/
+uscrn_daily01/
+external_data/
+*.gdb/
+
+# Local settings and Python artifacts
+.env
+.env.*
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.DS_Store
