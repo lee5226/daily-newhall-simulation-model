@@ -69,7 +69,7 @@ Figure numbers in script names may differ from those in the manuscript.
 
 ## Data and setup
 
-Processed inputs and model outputs are stored separately on Zenodo (updated DOI to be added). Download the dataset and place its `outputs/` folder in the repository root, keeping the original subfolders and filenames. The main model reads processed inputs from `outputs/1016/`.
+Processed inputs and model outputs are stored separately on Zenodo (https://zenodo.org/records/23405940). Download the dataset and place its `outputs/` folder in the repository root, keeping the original subfolders and filenames. The main model reads processed inputs from `outputs/1016/`.
 
 Raw data sources:
 - [USCRN Daily01](https://www.ncei.noaa.gov/pub/data/uscrn/products/daily01/)
