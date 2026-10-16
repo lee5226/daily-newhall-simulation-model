@@ -69,7 +69,7 @@ Figure numbers in script names may differ from those in the manuscript.
 
 ## Data and setup
 
-Processed inputs and model outputs are available on Zenodo (https://zenodo.org/records/23405940). Download the dataset and place its `outputs/` folder in the repository root, keeping the original subfolders and filenames. The main model reads processed inputs from `outputs/1016/`.
+Processed inputs and model outputs are available on Zenodo (https://doi.org/10.5281/zenodo.23405940). Download the dataset and place its `outputs/` folder in the repository root, keeping the original subfolders and filenames. The main model reads processed inputs from `outputs/1016/`.
 
 Raw data sources:
 - [USCRN Daily01](https://www.ncei.noaa.gov/pub/data/uscrn/products/daily01/)
@@ -92,10 +92,6 @@ python src/evaluation/compute_vwc_performance_metrics_final_qc_w33_dbthirdbar_pt
 
 Other simulations and evaluations are provided in `src/dnsm/`, `src/nsm/`, and `src/evaluation/`.
 
-**Preprocessing note:** `03_extract_gssurgo.py` currently expects `outputs/selected_station_year.csv`. If using the output of `02b_select_station_year_pt_qc.py`, change that filename to `selected_station_year_1016_pt_qc.csv` in `03_extract_gssurgo.py`.
-
 ## Citation
 
 Lee, M., Merwade, V., and Levi, M. R. *A Daily Newhall Simulation Model for Surface and Rootzone Soil Moisture Estimation.* (Publication details pending.)
-
-Software and dataset Zenodo version DOIs will be added after the updated releases.
